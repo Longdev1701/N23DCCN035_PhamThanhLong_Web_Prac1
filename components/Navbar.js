@@ -1,26 +1,26 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-6 py-4 bg-white shadow sticky top-0">
-      
-      {/* Logo */}
-      <h1 className="text-2xl font-bold text-blue-600 cursor-pointer">
-        MyStore
-      </h1>
+    <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
+      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <div>
+          <p className="text-lg font-bold tracking-tight text-slate-900">
+            MyStore
+          </p>
+          <p className="text-xs text-slate-500">Navbar skeleton</p>
+        </div>
 
-      {/* Menu */}
-      <div className="space-x-6 hidden md:flex text-sm font-medium">
-        <a href="#" className="hover:text-blue-600 transition">
-          Home
-        </a>
-        <a href="#" className="hover:text-blue-600 transition">
-          Products
-        </a>
-      </div>
+        <div className="hidden items-center gap-4 text-sm font-medium text-slate-500 sm:flex">
+          <span>Home</span>
+          <span>Products</span>
+        </div>
 
-      {/* Cart */}
-      <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-        Cart (0)
-      </button>
-    </nav>
-  )
+        <button
+          type="button"
+          className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600"
+        >
+          Cart
+        </button>
+      </nav>
+    </header>
+  );
 }
